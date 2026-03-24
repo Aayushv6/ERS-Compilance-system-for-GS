@@ -9,9 +9,9 @@ def email_alert(subject, body, to):
     msg["Subject"] = subject
     msg["To"] = to
 
-    user = "avishwakarma9919@gmail.com"
+    user = "your email id"
     msg["From"] = user
-    password = "xfkr hfjk fadv lcht"  # app password
+    password = " "  # app password
 
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
