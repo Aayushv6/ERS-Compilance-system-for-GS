@@ -1,0 +1,121 @@
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+ 
+.App-link {
+  color: #61dafb;
+}
+ 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+ 
+/* ---------- General Layout ---------- */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa; /* Light grey background like the screenshot */
+  color: #333;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* top = 0 so it touches navbar */
+}
+ 
+.container--white {
+  background: transparent;
+}
+ 
+/* ---------- Navbar Styling ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 12px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+ 
+.nav-left .nav-logo {
+  height: 60px; /* Adjusted based on the image logo size */
+  width: auto;
+  object-fit: contain;
+}
+ 
+.nav-right {
+  display: flex;
+  gap: 30px; /* Space between nav links */
+}
+ 
+.nav-link {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease-in-out;
+  padding: 5px 0;
+}
+ 
+.nav-link:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+ 
+/* Style for the active link (currently visited page) */
+.nav-link.active {
+  color: #333;
+  font-weight: 600;
+  border-bottom: 2px solid #333; /* Matches the underline style in many professional apps */
+}
+ 
+/* ---------- UI Components (Tables & Buttons) ---------- */
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #222;
+}
+ 
+button {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+ 
+button:hover {
+  background-color: #e0e0e0;
+  border-color: #bbb;
+}
+ 
+/* Specific styles for the Trigger Event department blocks */
+.department-card {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+ 
+
