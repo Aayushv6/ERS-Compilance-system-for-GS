@@ -13,7 +13,7 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGener
 from langchain_core.prompts import ChatPromptTemplate 
 
 # --- API KEY CONFIGURATION ---
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCdc-4hH6wbq17FF77E9WPR8npt1OhqckY"
+os.environ["GOOGLE_API_KEY"] = "your API KEY"
 
 app = FastAPI()
 
@@ -28,7 +28,7 @@ class ChatRequest(BaseModel):
     question: str
 
 # --- MONGODB SETUP ---
-client = MongoClient("mongodb+srv://sahil1321:SAHIL2004@cluster0.bduhztj.mongodb.net/GS?appName=Cluster0")
+client = MongoClient("your mongo url")
 db = client["GS"]
 # Verify these match your MongoDB Compass collection names exactly!
 collections = ["departments", "events", "responses"]
